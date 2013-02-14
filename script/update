@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+SOURCE_ROOT=$(cd $(dirname $0); cd ..; pwd -P)
+
+export PATH=${SOURCE_ROOT}/depot_tools:${PATH}
+cd ${SOURCE_ROOT}/node-webkit
+gclient sync
+GYP_GENERATORS=ninja src/build/gyp_chromium

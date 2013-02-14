@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+SOURCE_ROOT=$(cd $(dirname $0); cd ..; pwd -P)
+
+cd ${SOURCE_ROOT}/node-webkit/src
+${SOURCE_ROOT}/ninja/ninja -C ./out/Release nw
+
+echo "==============================================================================="
+echo "Success! You can find node-webkit here:"
+echo "${SOURCE_ROOT}/node-webkit/src/out/Release/node-webkit.app"
