@@ -1,7 +1,7 @@
 # build-node-webkit
 
 This repository aims to make it easy to build
-[node-webkit](https://github.com/rogerwang/node-webkit).
+[`node-webkit`](https://github.com/rogerwang/node-webkit).
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ $ script/build
 
 Be patient.
 
-## Updating to a newer version of node-webkit
+## Updating to a newer version of `node-webkit`
 
 `script/bootstrap` pulls down the latest version of `node-webkit`.
 `script/build` will just rebuild that version over and over no matter how many
